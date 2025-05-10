@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Prediction System</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Assets/Images/tabLogo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <img src="./Assets/Images/logo.webp" alt="">
+                <span>Loan Approval Prediction System</span>
+            </a>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class="heading">
+                <h1>Welcome to the<br>Loan Approval Predictor</h1>
+                <p>Automate loan eligibility decisions with AI.</p>
+            </div>
+            <div class="predictContent">
+                <p>Start now by submitting your credentials.</p>
+                <a href="#predictFormContainer">Predict</a>
+            </div>
+        </div>
+        <div class="formContainer" id="predictFormContainer">
+            <form action="" id="predictForm">
+
+                <div class="inpNum">
+                    <label for="amountInp">Loan Amount : </label>
+                    <input type="number" name="amount" id="amountInp">
+                </div>
+
+                <div class="inpNum">
+                    <label for="termInp">Loan Amount term : </label>
+                    <input type="number" name="term" id="termInp">
+                </div>
+
+                <div class="inpNum">
+                    <label for="incomeInp">Applicant Income : </label>
+                    <input type="number" name="income" id="incomeInp">
+                </div>
+
+                <div class="inpNum">
+                    <label for="coIncomeInp">Coapplicant Income : </label>
+                    <input type="number" name="coIncome" id="coIncomeInp">
+                </div>
+
+                <div>
+                    <label>Gender : </label>
+                    <input type="radio" name="gender" value="1" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="0" id="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div>
+                    <label>Credit History : </label>
+                    <input type="radio" name="creditHist" value="1" id="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="creditHist" value="0" id="no">
+                    <label for="no">No</label>
+                </div>
+
+                <div>
+                    <label>Self Employed : </label>
+                    <input type="radio" name="selfEmp" value="1" id="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="selfEmp" value="0" id="no">
+                    <label for="no">No</label>
+                </div>
+
+                <div>
+                    <label>Education : </label>
+                    <input type="radio" name="education" value="1" id="graduate">
+                    <label for="graduate">Graduate</label>
+                    <input type="radio" name="education" value="0" id="notGraduate">
+                    <label for="notGraduate">Not Graduate</label> 
+                </div>
+
+                <div>
+                    <label>Married : </label>
+                    <input type="radio" name="married" value="1" id="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="married" value="0" id="no">
+                    <label for="no">No</label>
+                </div>
+
+                <div>
+                    <label>Dependents : </label>
+                    <input type="radio" name="dependents" value="0" id="zero">
+                    <label for="zero">0</label>
+                    <input type="radio" name="dependents" value="1" id="one">
+                    <label for="one">1</label>
+                    <input type="radio" name="dependents" value="2" id="two">
+                    <label for="two">2</label>
+                    <input type="radio" name="dependents" value="4" id="three">
+                    <label for="three">3 or 3+</label>
+                </div>
+
+                <div>
+                    <label for="propArea">Property area : </label>
+                    <select name="Property_Area" id="propArea">
+                        <option value="" selected disabled>Choose</option>
+                        <option value="0">Rural</option>
+                        <option value="2">Semiurban</option>
+                        <option value="1">Urban</option>
+                    </select>
+                </div>
+                <p id="result"></p>
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p> &copy;Copyright 2025. All Rights Reserved</p>
+    </footer>
+    <script src="./predictFormLogic.js"></script>
+</body>
+</html>

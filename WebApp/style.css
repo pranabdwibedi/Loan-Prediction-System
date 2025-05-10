@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-weight: 500;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.356));
+    z-index: 11;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+nav>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+nav>a>img {
+    height: 50px;
+}
+
+main {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, #25195c 0%, #547feb 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+
+main>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 50px;
+    padding: 20px 50px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading>h1 {
+    font-weight: 800;
+    font-size: 100px;
+}
+
+.heading>p {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.predictContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.predictContent>p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.predictContent>a {
+    text-decoration: none;
+    background-color: #130e29;
+    border: 1px solid white;
+    padding: 10px 40px;
+    width: max-content;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.formContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 30px 30px;
+}
+
+#predictForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: max-content;
+    gap: 10px;
+    font-size: 17px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: linear-gradient(90deg, #141518 0%, #182848 100%);
+    box-shadow: 0px 0px 15px beige;
+}
+
+#predictForm>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#predictForm>div>input[type="number"] {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+.inpNum {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#predictForm>div>select {
+    width: 50%;
+    height: 30px;
+    font-size: 15px;
+}
+
+#predictForm>div>input[type="radio"]:hover,
+#predictForm>div>label:hover {
+    cursor: pointer;
+}
+
+#predictForm>input[type="submit"] {
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    background-color: #25195c;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+#predictForm>p{
+    font-size: 25px;
+    font-weight: 700;
+    align-self: center;
+}
+
+
+
+footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #160266 0%, #122d6d 100%);
+    border-top: 1px solid white;
+}
+footer>p {
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+.about-us {
+    padding: 60px 20px;
+    color: #2c3e50;
+}
+
+.about-container {
+    max-width: 80%;
+    margin: auto;
+    background: linear-gradient(90deg, #0b5a70 0%, #000851 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.911);
+}
+
+.about-container h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f0ecec;
+}
+
+.about-container .tagline {
+    text-align: center;
+    font-size: 1.4em;
+    color: #bfc0c0;
+    margin-bottom: 40px;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: #b78cdf;
+    margin-bottom: 12px;
+}
+
+.about-section p {
+    font-size: 1.5em;
+    line-height: 1.7;
+    color: #ffffff;
+}
