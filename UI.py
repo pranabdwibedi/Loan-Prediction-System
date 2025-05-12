@@ -59,7 +59,7 @@ dependents_options = ['0', '1', '2', '3+']
 education_options = ['Graduate', 'Not Graduate']
 self_employed_options = ['Yes', 'No']
 property_area_options = ['Rural', 'Semiurban', 'Urban']
-credit_history_options = ['Yes', 'No']
+credit_history_options = ['Good', 'Bad']
 
 # Define labels and dropdowns
 fields = [
