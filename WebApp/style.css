@@ -106,7 +106,7 @@ main>div {
 }
 
 .formContainer {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -176,6 +176,10 @@ main>div {
     font-size: 25px;
     font-weight: 700;
     align-self: center;
+}
+.formContainer>p{
+    font-size: 18px;
+    color: rgb(114, 255, 114);
 }
 
 
